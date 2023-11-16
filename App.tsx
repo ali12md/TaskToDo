@@ -36,7 +36,7 @@ function App(): JSX.Element {
   }
   const handleAssSort = () => {
     let temp = [...list]
-    temp.sort(function (a, b) {
+    temp.sort((a, b) => {
       var c = new Date(a.date);
       var d = new Date(b.date);
       return d - c;
@@ -47,7 +47,7 @@ function App(): JSX.Element {
 
   const handleDesSort = () => {
     let temp = [...list]
-    temp.sort(function (a, b) {
+    temp.sort((a, b) => {
       var c = new Date(a.date);
       var d = new Date(b.date);
       return c - d;
